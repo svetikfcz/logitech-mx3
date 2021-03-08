@@ -69,6 +69,11 @@ body {
     margin-top: 40px;
 }
 
+.top__svg {
+    width: 42px;
+    height: 22px;
+}
+
 .bluetooth {
     background: #EDEDED;
     padding-top: 42px;
@@ -120,6 +125,8 @@ body {
     border: 1px solid #2F3132;
     flex-basis: 166px;
     min-height: 94px;
+    padding-left: 17px;
+    padding-right: 17px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,6 +166,7 @@ body {
 .flow__ol {
     margin-top: 36px;
     padding-left: 54px;
+    list-style-position: inside;
 }
 
 .settings {
@@ -185,4 +193,228 @@ body {
     color: #FFFFFF;
     margin-left: 5px;
     margin-right: 11px;
+}
+
+.mouse__text {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.mouse__img {
+    min-height: 310px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.mouse__img_1 {
+    background-image: url(../img/image\ 1.jpg);
+}
+
+.mouse__img_2 {
+    background-image: url(../img/image\ 2.jpg);
+}
+
+.footer {
+    background: #2F3132;
+    min-height: 75px;
+    padding-top: 22px;
+}
+
+.footer_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7px;
+    line-height: 8px;
+    text-align: center;
+    color: #C7C8C8;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .top {
+        padding-top: 54px;
+        padding-bottom: 80px;
+    }
+
+    .header__logo {
+        width: 240px;
+    }
+
+    .top__img {
+        margin-top: 159px;
+        margin-bottom: 124px;
+        height: 514px;
+        background-image: url(../img/MX-Master_tab.png);
+    }
+
+    .heading {
+        font-size: 40px;
+        line-height: 47px;
+        margin-bottom: 30px;
+    }
+
+    .text {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .top__text-margin {
+        margin-left: 154px;
+        margin-right: 155px;
+    }
+
+    .top__arrow {
+        margin-top: 76px;
+    }
+
+    .top__svg {
+        width: 61px;
+        height: 33px;
+    }
+
+    .bluetooth {
+        padding-top: 80px;
+        padding-bottom: 3px;
+    }
+
+    .text_margin {
+        margin-left: 77px;
+        margin-right: 77px;
+    }
+
+    .bluetooth__img {
+        height: 597px;
+        margin-left: 39px;
+        margin-right: 19px;
+    }
+
+    .bluetooth__heading {
+        font-size: 150px;
+        line-height: 176px;
+    }
+
+    .info__content {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 30px;
+    }
+
+    .info__item {
+        flex-basis: 300px;
+        padding-left: 32px;
+        padding-right: 31px;
+        min-height: 170px;
+    }
+
+    .info__item-heading {
+        margin-bottom: 5px;
+    }
+
+    .info__heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .flow {
+        padding-bottom: 498px;
+        padding-left: 64px;
+        padding-right: 65px;
+    }
+
+    .text_flow-p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .flow__ol {
+        display: flex;
+        padding-left: 0;
+    }
+
+    .text_flow {
+        width: auto;
+        padding: 8px 21px 4px 28px;
+        border-left: 1px solid #494949;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .text_flow:first-child {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .text_flow:last-child {
+        padding-right: 0;
+    }
+
+    .settings {
+        padding-left: 64px;
+        padding-right: 65px;
+        padding-bottom: 70px;
+    }
+
+    .text_settings-p {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .settings__slider {
+        margin: 54px 198px 148px 199px;
+    }
+
+    .settings__icons {
+        margin-right: 104px;
+        margin-left: 98px;
+    }
+
+    .settings_img {
+        height: 35px;
+    }
+
+    .text_settings {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .mouse__text {
+        padding-left: 67px;
+        padding-right: 65px;
+        padding-bottom: 50px;
+    }
+
+    .text_mouse {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .mouse__img {
+        min-height: 549px;
+    }
+
+    .mouse__img_1 {
+        background-image: url(../img/image1_big.jpg);
+    }
+
+    .mouse__img_2 {
+        background-image: url(../img/image2_big.jpg);
+    }
+
+    .footer {
+        min-height: 150px;
+        padding-top: 47px;
+    }
+
+    .footer_text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .center {
+        padding-left: calc(50%-580px);
+        padding-right: calc(50%-580px);
+    }
 }
