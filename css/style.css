@@ -4,8 +4,26 @@ body {
 
 .top {
     background: #E0E1E2;
-    padding-top: 25px;
     padding-bottom: 48px;
+}
+
+.navbar {
+    padding-top: 25px;
+}
+
+.navbar-light .navbar-toggler {
+    position: absolute;
+    right: 28px;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    justify-content: center;
 }
 
 .center-content {
@@ -13,9 +31,14 @@ body {
     justify-content: center;
 }
 
-.header {
+/* .header {
     display: flex;
     justify-content: center;
+} */
+
+.header__logo_white {
+    display: none;
+    width: 150px;
 }
 
 .top__img {
@@ -174,6 +197,10 @@ body {
     padding-top: 70px;
 }
 
+.settings__slider-img {
+    display: none;
+}
+
 .settings__slider {
     margin: 35px 22px 95px 23px;
 }
@@ -233,8 +260,11 @@ body {
 
 @media (min-width: 768px) {
     .top {
-        padding-top: 54px;
         padding-bottom: 80px;
+    }
+
+    .navbar {
+        padding-top: 54px;
     }
 
     .header__logo {
@@ -276,6 +306,10 @@ body {
     .bluetooth {
         padding-top: 80px;
         padding-bottom: 3px;
+    }
+
+    .bluetooth__img {
+        background-image: url(../img/Bluetooth_MXM3_LEFT_GRAPHITE.png);
     }
 
     .text_margin {
@@ -414,7 +448,270 @@ body {
 
 @media (min-width: 1024px) {
     .center {
-        padding-left: calc(50%-580px);
-        padding-right: calc(50%-580px);
+        padding-left: calc(50% - 580px);
+        padding-right: calc(50% - 580px);
+    }
+
+    .heading {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+
+    .text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .header {
+        background: #2F3132;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header__logo_dark {
+        display: none;
+    }
+
+    .header__logo_white {
+        display: block;
+    }
+
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        border-bottom: 1px solid #fff;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .nav-item {
+        padding-left: 22px;
+        padding-right: 21px;
+        border-right: 1px solid #494949;
+    }
+
+    .nav-item:first-child {
+        padding-left: 0;
+    }
+
+    .nav-item:last-child {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .top__img {
+        margin-top: 20px;
+        height: 671px;
+        padding-top: 80px;
+        margin-bottom: 8px;
+    }
+
+    .top__arrow {
+        margin-top: 49px;
+    }
+
+    .bluetooth {
+        padding-bottom: 80px;
+    }
+
+    .bluetooth__img {
+        height: 427px;
+        background: url(../img/Bluetooth_MXM3_FRONT_GRAPHITE.png) no-repeat 0 119px,
+            url(../img/Bluetooth_MXM3_LEFT_GRAPHITE.png) no-repeat right 119px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .center_bluetooth {
+        padding-left: calc(50% - 622px);
+        padding-right: calc(50% - 622px);
+    }
+
+    .bluetooth__heading {
+        font-size: 96px;
+        line-height: 112px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bluetooth__heading_day {
+        font-size: 300px;
+        line-height: 352px;
+        padding-left: 74px;
+    }
+
+    .bluetooth__heading_day-mini {
+        padding-top: 45px;
+    }
+
+    .info {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .info__text {
+        width: 765px;
+        margin: auto;
+    }
+
+    .info__item {
+        min-height: 140px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .info__item-heading {
+        margin-bottom: 5px;
+    }
+
+    .info__slider {
+        padding-left: calc(50% - 640px);
+        padding-right: calc(50% - 640px);
+    }
+
+    .text_info {
+        width: 765px;
+        margin: auto;
+    }
+
+    .flow {
+        padding-bottom: 870px;
+    }
+
+    .flow_center {
+        padding-left: calc(50% - 479px);
+        padding-right: calc(50% - 479px);
+    }
+
+    .flow__ol {
+        margin-left: 15px;
+    }
+
+    .settings {
+        padding-bottom: 100px;
+    }
+
+    .settings__slider {
+        display: none;
+    }
+
+    .text_settings-p {
+        width: 958px;
+        margin: auto;
+    }
+
+    .settings__slider-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 71px;
+    }
+
+    .settings__content {
+        width: 749px;
+        margin: auto;
+    }
+
+    .mouse {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .mouse_center {
+        padding-left: calc(50% - 655px);
+        padding-right: calc(50% - 655px);
+    }
+
+    .mouse__item {
+        height: 557px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mouse__img {
+        background-size: cover;
+    }
+
+    .mouse__text_1 {
+        padding-right: 217px;
+        order: 2;
+    }
+
+    .mouse__text_1 .heading {
+        text-align: left;
+    }
+
+    .mouse__text_1 .text {
+        text-align: left;
+    }
+
+    .mouse__text_2 {
+        padding-left: 217px;
+        order: 3;
+    }
+
+    .mouse__text_2 .heading {
+        text-align: right;
+    }
+
+    .mouse__text_2 .text {
+        text-align: right;
+    }
+
+    .mouse__img_1 {
+        order: 1;
+        background-image: url(../img/image1_desk.png);
+    }
+
+    .mouse__img_2 {
+        order: 4;
+        background-image: url(../img/image2_desk.png);
     }
 }
